@@ -1,0 +1,38 @@
+//Primary btn
+
+$font-family-base:  'Poppins';
+$color-white: #fff;
+$color-pink: #ff0b61;
+$color-red: #ff2d50;
+
+
+// Primary Button
+// -------------------------
+.primary-btn .elementor-button{
+	display: inline-block;
+	position: relative;
+	padding: 20px 39px;
+	background-color: transparent;
+	color: $color-white;
+	border: 2px solid $color-pink;
+	transition: .3s all ease;
+	border-radius: 42px;
+	&:hover{
+		background-color: $color-pink;
+		box-shadow: 0 4px 24px rgba($color-pink,.52);
+		color: $color-white;
+		text-decoration: none;
+		border-color: $color-pink;
+	}
+	&:active,
+	&:focus{
+		background-color: $color-red;
+		box-shadow: 0 4px 24px rgba($color-red,.52);
+		color: $color-white;
+		border-color: $color-red;
+	}
+	&:disabled,
+	&[disabled]{
+		opacity: 0.5;
+	}
+}
