@@ -1,3 +1,4 @@
 Default Classes 
 
-.primary-btn //header btn
+.primary-btn // header btn
+.custom-fonts // evil empire fonts
