@@ -1,0 +1,50 @@
+#overlay {
+  background: var(--color-body);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:  center;
+  }
+}
+.loadtext {
+  animation: fadeinout 1.5s ease-in-out infinite;
+  font-size: 35px;
+  font-family: var(--font-family-evil-empire);
+  color: var(--color-white);
+  margin-top: 20px;
+  display: block;
+}
+.spinner {
+  border: solid 15px var(--color-white);
+  border-top: solid 15px var(--color-body);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+@keyframes fadeinout {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
